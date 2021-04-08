@@ -22,7 +22,7 @@ else
                 input=Y
             fi
         case $input in
-            "Y" )
+            "Y" | "y" )
             chmod +x $1 
             echo "File permissions changed" ;;
             "n" )
