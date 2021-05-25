@@ -17,3 +17,4 @@
 | [sysInfo.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/sysInfo.sh):|Displays most common system information|
 | [chkX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chkX.sh) :| checks if the file is executable. | 
 | [chmodX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chmodX.sh):| provides permission if file is not executable.| 
+| [wifi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/wifi.sh):| Simple interactive script to help you connect to available WiFi around you|
