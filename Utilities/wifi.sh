@@ -14,7 +14,7 @@ nmcli -t -f ,ssid dev wifi > ssid.txt
 nmcli -t -f ,bssid dev wifi | sed 's/\\//g' > bssid.txt
 nl ssid.txt
 n_lines=$(wc -l < ssid.txt)
-read -p "${txtgrn}Enter your choice: ${txtrst}" input
+read -p "${txtgrn}Enter your choice:[1-$n_lines] ${txtrst}" input
 wifi_name=$(sed -n -e "$input"p ssid.txt)
 bssid=$(sed -n -e "$input"p bssid.txt)
 echo "${txtylw}Connecting "$wifi_name" ...${txtrst}"
