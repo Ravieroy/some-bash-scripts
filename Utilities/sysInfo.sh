@@ -15,11 +15,32 @@ txtpur=$(tput setaf 5)
 txtcyn=$(tput setaf 6)
 txtrst=$(tput sgr0)
 
+# for columns
+COLUMNS=$(tput cols)
+
+# for alignment in center
+center() {
+	w=$(( $COLUMNS / 2 - 60 ))
+	while IFS= read -r line
+	do
+		printf "%${w}s %s\n" ' ' "$line"
+	done
+}
+
+centerwide() {
+	w=$(( $COLUMNS / 2 - 30 ))
+	while IFS= read -r line
+	do
+		printf "%${w}s %s\n" ' ' "$line"
+	done
+}
+
+
 
 message(){
-    echo "${txtred}.........ATTENTION.......................${txtrst}"
-    echo "${txtylw}If your distribution is anything other than Debian/Ubuntu, Please make sure you have acpi and dmidecode installed.${txtrst}"
-    echo "${txtylw}For Debian/Ubuntu based distros you will be prompted to install directly.${txtrst}"
+    echo "${txtred}.......................ATTENTION.......................${txtrst}" | centerwide
+    echo "${txtylw}If your distribution is anything other than Debian/Ubuntu, Please make sure you have acpi and dmidecode installed.${txtrst}" | center
+    echo "${txtylw}For Debian/Ubuntu based distros you will be prompted to install directly.${txtrst}" | center
     sleep 7
 }
 
@@ -30,7 +51,8 @@ message(){
 chk_root() {
 	local meid=$(id -u)
 	if [ $meid -ne 0 ]; then
-		echo "${txtred}ATTENTION: You are not root user. This will work best if you are root.${txtrst}"
+		echo "${txtred}ATTENTION: For the details to be displayed you should run with root(sudo <name>).${txtrst}" | centerwide
+
 		exit 999
     fi
 }
@@ -132,7 +154,7 @@ LSB=/usr/bin/lsb_release
 
 process(){
 
-echo "${txtylw}--------------------------------SYSTEM-------------------------------------------------${txtrst}"
+echo "${txtylw}--------------------------------SYSTEM-------------------------------------------------${txtrst}" 
 echo " "
 
 dmidecode | grep -A4 '^System Information'  #provides system information
@@ -261,7 +283,7 @@ echo " ssh service status"
 systemctl status ssh | grep -i active # ssh active/inactive
 
 echo " "
-echo "${txtred}-----------------------------------DONE-------------------------------------------------${txtrst}"
+echo "${txtred}-----------------------------------------DONE------------------------------------------${txtrst}" 
 }
 
 
