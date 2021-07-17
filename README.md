@@ -18,3 +18,4 @@
 | [chkX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chkX.sh) :| checks if the file is executable. | 
 | [chmodX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chmodX.sh):| provides permission if file is not executable.| 
 | [wifi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/wifi.sh):| Simple interactive script to help you connect to available WiFi around you|
+| [pkg-lst.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/pkg-lst.sh):| Simple menu driven script to help you create backup list of all the packages installed in the system and reinstall it later.|
