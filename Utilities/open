@@ -1,0 +1,16 @@
+#! /bin/bash                                                                                           
+
+#This script takes path name as argument and opens the path in nautilus 
+
+if [ $# -eq 0 ] 
+then
+    echo "Error : Wrong Syntax"
+    echo "Syntax: $0 pathName"
+else 
+    if [ -e $1 ]
+    then 
+        nautilus $1 &
+    else
+        echo "$1 Path Not Found"
+    fi
+fi
