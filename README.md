@@ -20,3 +20,4 @@
 | [wifi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/wifi.sh):| Simple interactive script to help you connect to available WiFi around you|
 | [pkg-lst.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/pkg-lst.sh):| Simple menu driven script to help you create backup list of all the packages installed in the system and reinstall it later.|
 | [pi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Misc/pi.sh):| Simple script to find value of pi using random numbers(Monte Carlo)|
+| [open](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/open):| opens the given pathname(folder) in the nautilus GUI filemanager.|
