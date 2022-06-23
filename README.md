@@ -11,13 +11,13 @@
 
 | File Name        | Description           | 
 | ------------- |:-------------:| 
-| [mon.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/mon.sh):| monitors your time spent on laptop while tracking your battery. This creates a log file with all the sessions. ***you have to run the script when you power on and off your laptop*** |
-| [brave.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/brave.sh):| Installation and complete removal of Brave browser for Debian/Ubuntu distros|
-| [stat.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/stat.sh):| Displays fan rpm and CPU temperature|
-| [sysInfo.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/sysInfo.sh):|Displays most common system information|
-| [chkX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chkX.sh) :| checks if the file is executable. | 
-| [chmodX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chmodX.sh):| provides permission if file is not executable.| 
-| [wifi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/wifi.sh):| Simple interactive script to help you connect to available WiFi around you|
-| [pkg-lst.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/pkg-lst.sh):| Simple menu driven script to help you create backup list of all the packages installed in the system and reinstall it later.|
-| [pi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Misc/pi.sh):| Simple script to find value of pi using random numbers(Monte Carlo)|
-| [open](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/open):| opens the given pathname(folder) in the nautilus GUI filemanager.|
+| [mon.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/mon.sh)| monitors your time spent on laptop while tracking your battery. This creates a log file with all the sessions. ***you have to run the script when you power on and off your laptop*** |
+| [brave.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/brave.sh)| Installation and complete removal of Brave browser for Debian/Ubuntu distros|
+| [stat.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/stat.sh)| Displays fan rpm and CPU temperature|
+| [sysInfo.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/sysInfo.sh)|Displays most common system information|
+| [chkX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chkX.sh) | checks if the file is executable. | 
+| [chmodX.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/chmodX.sh)| provides permission if file is not executable.| 
+| [wifi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/wifi.sh)| Simple interactive script to help you connect to available WiFi around you|
+| [pkg-lst.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/pkg-lst.sh)| Simple menu driven script to help you create backup list of all the packages installed in the system and reinstall it later.|
+| [pi.sh](https://github.com/Ravieroy/some-bash-scripts/blob/main/Misc/pi.sh)| Simple script to find value of pi using random numbers(Monte Carlo)|
+| [open](https://github.com/Ravieroy/some-bash-scripts/blob/main/Utilities/open)| opens the given pathname(folder) in the nautilus GUI filemanager.|
