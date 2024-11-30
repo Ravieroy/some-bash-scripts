@@ -1,21 +1,35 @@
-#! /bin/bash
+#!/bin/bash
 
-#This script takes file name as argument and  checks if the file is executable or not.
+# This script checks if a file is executable.
+# Usage: ./check_executable.sh fileName
 
-if [ $# -eq 0 ]
-then
-    echo "Error : Wrong usage"
-    echo "usage: $0 fileName"
-else 
-    if [ -e $1 ]
-    then 
-        if [ -x $1 ] # -e is for file exist or not
-        then
-        echo "$1 is an executable"
+# Function to display usage
+display_usage() {
+    echo "Error: Wrong usage"
+    echo "Usage: $0 fileName"
+    exit 1
+}
+
+# Check if a filename is provided
+if [ $# -eq 0 ]; then
+    display_usage
+fi
+
+# Check if the file exists and determine if it is executable
+check_file() {
+    local file="$1"
+
+    if [ -e "$file" ]; then
+        if [ -x "$file" ]; then
+            echo "\"$file\" is an executable."
         else
-        echo "$1 is  not an executable"
+            echo "\"$file\" is not an executable."
         fi
     else
-    echo "$1 not found"
+        echo "\"$file\" not found."
     fi
-fi
+}
+
+# Call the function with the provided filename
+check_file "$1"
+
