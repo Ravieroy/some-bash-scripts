@@ -1,6 +1,5 @@
 #!/bin/bash
 # Ravi Roy (https://github.com/Ravieroy)
-# Improved by Assistant (OpenAI)
 
 # Text colors for aesthetics
 clear
